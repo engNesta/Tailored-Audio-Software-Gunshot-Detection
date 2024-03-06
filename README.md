@@ -25,6 +25,11 @@ This project is focused on developing an emergency sound detection system. The s
 - **Functionality**: Triggers notifications based on the AI model's detection outcomes.
 - **User Interface**: Notifications are displayed through the web application's interface to inform the user.
 
+### 6. Database Integration
+- **User Management**: Stores user account information, preferences, and authentication details to manage access to the service.
+- **Detection Logs**: Maintains records of detected sounds, including timestamps and characteristics, for analysis and review.
+- **Notifications**: Logs notifications sent to users and their interactions with these alerts for auditing and enhancement of the notification system.
+
 ## Tools and Libraries
 
 - **Hardware**: Raspberry Pi with a microphone for audio capture.
@@ -40,12 +45,15 @@ This project is focused on developing an emergency sound detection system. The s
   - **Express.js**: For API development in the web application.
   - **Web Audio API**: For in-browser audio processing.
   - **React/Angular**: For developing the frontend of the web application.
+- **Database**:
+  - **MySQL/PostgreSQL**: For relational data storage, such as user accounts and detection logs.
+  - **MongoDB/Firebase**: For flexible, NoSQL storage of unstructured data or rapidly changing datasets.
 
 ## Progress Log
 
 - Established the project's goals and scope.
-- Defined the structure and components of the system.
+- Defined the structure and components of the system, including the addition of database integration for enhanced user management and data analysis.
 - Selected the appropriate tools and libraries for each part of the project, including audio capture, processing, AI model development, and web application development.
-- Discussed the installation and application of critical libraries like PyAudio, Librosa, TensorFlow/Keras.
-- Detailed a complete detection cycle timeline from raw data capture to user notification.
+- Discussed the installation and application of critical libraries like PyAudio, Librosa, TensorFlow/Keras, and explored database options for the project.
+- Outlined a complete detection cycle timeline from raw data capture to user notification and interaction.
 
