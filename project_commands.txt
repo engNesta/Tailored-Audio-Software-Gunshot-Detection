@@ -1,0 +1,19 @@
+# Python Environment
+- Activate Virtual Environment: .\venv\Scripts\activate
+- Deactivate Virtual Environment: deactivate
+- Install Python Package: pip install <package-name>
+- Generate Requirements File: pip freeze > requirements.txt
+- Install from Requirements: pip install -r requirements.txt
+
+# Node.js Environment
+- Install Node.js Package: npm install <package-name>
+- Install Project Dependencies: npm install
+
+# Git Version Control
+- Stage Changes: git add .
+- Commit Changes: git commit -m "<message>"
+- Push Changes: git push origin main
+
+# Server Management
+- Start Node.js Server: node server.js
+- Start with Nodemon: nodemon server.js
