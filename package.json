@@ -1,14 +1,17 @@
 {
   "name": "tailored-audio-software-gunshot-detection",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project is focused on developing an emergency sound detection system. The system is designed to recognize specific emergency sounds, such as gunshots, from environmental audio inputs and alert users in real-time upon detection.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1" 
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.3"
+  },
+  "directories": {
+    "test": "tests"
   }
 }
