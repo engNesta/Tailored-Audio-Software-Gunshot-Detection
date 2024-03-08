@@ -1,0 +1,40 @@
+Example Dataset and Models Documentation
+----------------------------------------
+
+Dataset:
+--------
+1. Augmented Samples (.npy files):
+    - Contains audio samples that have been augmented to increase the diversity of the dataset. 
+    - Augmentations may include changes in pitch, speed, volume, and the addition of background noise.
+
+2. Augmented Labels (.npy files):
+    - Corresponding labels for the augmented audio samples. Each label indicates the category of the sound, 
+      such as "drilling," "dog barking," or "gunshot."
+
+3. Training Sample Batches:
+    - Individual Audio Training Sample Batches: Contains various audio samples, including bank sounds and other resources.
+    - Whole Session Training Sample Batches: Contains real gunshot audio samples from pilot testing.
+
+4. GAN Samples (Corrupted):
+    - Note: Some folders containing GAN-generated samples (e.g., GAN_AK, GAN_handgun, GAN_Revolvers) were found to be corrupted. 
+      These samples will be regenerated in the future using Generative Adversarial Networks to enhance the dataset's diversity.
+
+Models:
+------
+1. Trained Keras Models (.h5 files):
+    - 1D Model: A one-dimensional CNN model for processing raw audio waveforms.
+    - 2D Models (128x64 and 128x128): Two-dimensional CNN models for processing spectrogram representations of audio.
+
+2. Trained TensorFlow Lite Models (.tflite files):
+    - Similar to the Keras models but optimized for deployment on devices with limited computational resources, like a Raspberry Pi.
+
+Training File:
+-------------
+1. train.csv:
+    - Contains labels for 8000+ audio samples, categorizing them into various sounds such as "drilling," "dog barking," etc.
+    - This labeled data is crucial for training machine learning models to recognize and classify different types of urban sounds.
+
+Purpose:
+--------
+This documentation serves as a guide to understand the structure and content of the example dataset and models provided for the gunshot detection project. It aims to facilitate future reference and ensure clarity for anyone accessing the project.
+
